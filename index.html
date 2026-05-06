@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ibraheem Portfolio</title>
+</head>
+<script>
+function showMessage() {
+    document.getElementById("message").innerText = "Thanks for visiting my website!";
+}
+</script>
+
+<body>
+
+<div style="background-color: #222; padding: 15px; text-align: center;">
+    <a href="#" style="color: white; margin: 10px; text-decoration: none;">Home</a>
+    <a href="#" style="color: white; margin: 10px; text-decoration: none;">About</a>
+    <a href="#" style="color: white; margin: 10px; text-decoration: none;">Skills</a>
+    <a href="#" style="color: white; margin: 10px; text-decoration: none;">Contact</a>
+</div>
+    <div>
+        <h1>Ibraheem Umar</h1>
+        <p>Frontend Developer (Beginner)</p>
+    </div>
+
+    <div>
+        <h2>About Me</h2>
+        <p>I am learning web development and I want to become a professional developer.</p>
+    </div>
+
+    <div>
+        <h2>My Skills</h2>
+        <p>HTML, CSS (Learning), JavaScript (Coming Soon)</p>
+    </div>
+
+    <div>
+        <h2>Contact</h2>
+        <p>Email: ibraheem@example.com</p>
+    </div>
+
+</body>
+</html>
+<h2>Contact Me</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+<br><br>
+
+<button onclick="greetUser()" style="
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+">
+    Submit
+</button>
+<script>
+function greetUser() {
+    let userName = document.getElementById("name").value;
+    document.getElementById("output").innerText = "Hello " + userName + ", welcome to my website!";
+}
+</script>
